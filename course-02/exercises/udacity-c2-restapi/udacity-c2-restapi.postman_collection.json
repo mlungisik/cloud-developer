@@ -516,7 +516,7 @@
 					"response": []
 				},
 				{
-					"name": "/api/v0/feed authorized Copy",
+					"name": "/api/v0/feed/signed-url/:fileName",
 					"event": [
 						{
 							"listen": "test",
@@ -541,7 +541,7 @@
 						}
 					],
 					"request": {
-						"method": "POST",
+						"method": "GET",
 						"header": [
 							{
 								"key": "Content-Type",
@@ -565,7 +565,7 @@
 								"feed"
 							]
 						},
-						"description": "Post a new item to the feed"
+						"description": "Request a signed url for a file"
 					},
 					"response": []
 				}
@@ -630,7 +630,7 @@
 		{
 			"id": "3e3ea131-5328-4f50-8fe1-516e3995917d",
 			"key": "host",
-			"value": "http://localhost:8080",
+			"value": "udagramkhanyildv.cp7kpblj7pnr.us-east-1.rds.amazonaws.com",
 			"type": "string"
 		}
 	]
