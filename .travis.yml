@@ -24,9 +24,9 @@ script:
   - docker build -t udagram-frontend ./udagram-frontend
   - docker build -t reverseproxy ./reverseproxy
 
-  - docker tag udagram-api-feed blacktechie/udagram-api-feed:v6
-  - docker tag udagram-api-user blacktechie/udagram-api-user:v6
-  - docker tag udagram-frontend blacktechie/udagram-frontend:v6
+  - docker tag udagram-api-feed blacktechie/udagram-api-feed:v7
+  - docker tag udagram-api-user blacktechie/udagram-api-user:v7
+  - docker tag udagram-frontend blacktechie/udagram-frontend:v7
   - docker tag reverseproxy blacktechie/reverseproxy
   
 

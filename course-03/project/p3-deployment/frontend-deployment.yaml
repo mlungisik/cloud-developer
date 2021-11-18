@@ -16,7 +16,7 @@ spec:
         api: external        
     spec:
       containers:
-      - image: blacktechie/udagram-frontend:v6
+      - image: blacktechie/udagram-frontend:v7
         name: frontend
         command: [ "sleep" ]
         args: [ "infinity" ]

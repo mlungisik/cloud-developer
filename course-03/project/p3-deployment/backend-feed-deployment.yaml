@@ -15,7 +15,7 @@ spec:
         service: backend-feed
     spec:
       containers:
-      - image: blacktechie/udagram-api-feed:v6
+      - image: blacktechie/udagram-api-feed:v7
         name: backend-feed
         command: [ "sleep" ]
         args: [ "infinity" ]
