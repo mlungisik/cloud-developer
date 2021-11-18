@@ -5,8 +5,8 @@ data:
   AWS_PROFILE: udagram-mlu-dev
   AWS_REGION: us-east-2
   JWT_SECRET: production
-  POSTGRESS_DB: postgres
-  POSTGRESS_HOST: myudagramdb1.cp7kpblj7pnr.us-east-1.rds.amazonaws.com
+  POSTGRES_DB: postgres
+  POSTGRES_HOST: myudagramdb1.cp7kpblj7pnr.us-east-1.rds.amazonaws.com
   URL: http://localhost:8100  
 metadata:
   name: env-config
