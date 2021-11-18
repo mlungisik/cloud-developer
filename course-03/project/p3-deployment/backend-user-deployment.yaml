@@ -1,4 +1,4 @@
-apiVersion: apps/v2
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
@@ -17,14 +17,16 @@ spec:
       containers:
       - image: blacktechie/udagram-api-user:v6
         name: backend-user 
+        command: [ "sleep" ]
+        args: [ "infinity" ]
         imagePullPolicy: Always  
         resources:
           requests:
             memory: "64Mi"
             cpu: "100m"
           limits:
-            memory: "1024Mi"
-            cpu: "500m"      
+            memory: "512Mi"
+            cpu: "400m"      
         env:
         - name: URL
           valueFrom:

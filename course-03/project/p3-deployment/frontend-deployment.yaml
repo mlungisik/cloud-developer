@@ -1,4 +1,4 @@
-apiVersion: apps/v2
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
@@ -18,6 +18,8 @@ spec:
       containers:
       - image: blacktechie/udagram-frontend:v6
         name: frontend
+        command: [ "sleep" ]
+        args: [ "infinity" ]
         imagePullPolicy: Always          
         ports:
         - containerPort: 80
@@ -26,6 +28,6 @@ spec:
             memory: "64Mi"
             cpu: "100m"
           limits:
-            memory: "1024Mi"
-            cpu: "500m"                
+            memory: "512Mi"
+            cpu: "400m"                
       restartPolicy: Always

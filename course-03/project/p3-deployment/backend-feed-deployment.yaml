@@ -1,11 +1,11 @@
-apiVersion: apps/v2
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
     service: backend-feed
   name: backend-feed
 spec:
-  replicas: 3
+  replicas: 2
   selector:
     matchLabels:
       service: backend-feed
@@ -17,14 +17,16 @@ spec:
       containers:
       - image: blacktechie/udagram-api-feed:v6
         name: backend-feed
+        command: [ "sleep" ]
+        args: [ "infinity" ]
         imagePullPolicy: Always  
         resources:
           requests:
             memory: "64Mi"
             cpu: "100m"
           limits:
-            memory: "1024Mi"
-            cpu: "500m"                  
+            memory: "512Mi"
+            cpu: "400m"                  
         env:
         - name: URL
           valueFrom:
