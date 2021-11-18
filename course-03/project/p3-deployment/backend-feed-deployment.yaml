@@ -1,4 +1,4 @@
-apiVersion: apps/v1
+apiVersion: apps/v2
 kind: Deployment
 metadata:
   labels:
@@ -15,7 +15,7 @@ spec:
         service: backend-feed
     spec:
       containers:
-      - image: blacktechie/udacity-api-feed
+      - image: blacktechie/udagram-api-feed:v6
         name: backend-feed
         imagePullPolicy: Always  
         resources:

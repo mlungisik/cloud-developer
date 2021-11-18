@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: app
-          image: dockerhub.io/udagram-microservice-app/app:v1
+          image: aws.com/udagram-microservice-app/app:v1
           imagePullPolicy: Always
           ports:
             - containerPort: 80
