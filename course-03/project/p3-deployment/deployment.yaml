@@ -2,22 +2,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mans-not-hot
+  name: udagram-microservice-app
   labels:
-    app: mans-not-hot
+    app: udagram-microservice-app
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: mans-not-hot
+      app: udagram-microservice-app
   template:
     metadata:
       labels:
-        app: mans-not-hot
+        app: udagram-microservice-app
     spec:
       containers:
         - name: app
-          image: gcr.io/mans-not-hot/app:bed1f9d4
+          image: dockerhub.io/udagram-microservice-app/app:v1
           imagePullPolicy: Always
           ports:
             - containerPort: 80
